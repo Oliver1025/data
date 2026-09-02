@@ -8,13 +8,13 @@
 
 # ==================== GitHub 认证信息（请修改为你的信息） ====================
 # 个人访问令牌（Personal Access Token），用于身份验证
-github_token="your_github_personal_access_token_here"
+github_token="ghp_rg…UPsf"
 # GitHub 用户名
-github_username="your_github_username"
+github_username="Oliver1025"
 # 仓库名称
-repo_name="your_repo_name"
+repo_name="data"
 # 目标分支
-branch="your_branch"
+branch="main"
 
 # ==================== 切换到脚本所在目录 ====================
 cd "$(dirname "$0")" || exit 1
@@ -28,6 +28,6 @@ commit_msg="Update ip.txt on $(date '+%Y-%m-%d %H:%M:%S')"
 git commit -m "$commit_msg"
 
 # ==================== 强制推送到 GitHub ====================
-git push "https://${github_token}@github.com/${github_username}/${repo_name}.git" "$branch" --force
+git push "https://${github_username}:${github_token}@github.com/${github_username}/${repo_name}.git" "$branch"
 
 echo "✅ ip.txt 已推送到 GitHub"

@@ -1,4 +1,22 @@
-﻿config.json
-git_sync.ps1
-git_sync.sh
+# Python
 __pycache__/
+*.pyc
+
+# cfnb 临时输出
+*.csv
+*.log
+config.local.json
+results/
+
+# 编辑器
+.DS_Store
+.idea/
+.vscode/
+
+# cfnb 敏感文件（README 第627 行）
+git_sync.sh
+git_sync.ps1
+config.json
+cron.log
+valid_tokens.txt
+ipinfo_cache.txt
