@@ -1,6 +1,6 @@
 # Cloudflare IP 优选结果（自动同步）
 
-此仓库由 [cfnb](https://github.com/xinyitang3/cfnb) 自动维护，每 5 分钟同步一次最优 Cloudflare IP 列表。
+此仓库由 [cfnb](https://github.com/xinyitang3/cfnb) 自动维护，每天同步一次最优 Cloudflare IP 列表。
 
 ## 文件说明
 - `ip.txt`：优选后的 Cloudflare IP 列表（每行一个 `IP:PORT`）
