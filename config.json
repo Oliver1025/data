@@ -73,11 +73,7 @@
     "_comment_DNS_RECORD_TYPE": "DNS 记录类型（A 或 TXT）",
     "ADDITIONAL_SOURCES": [
         {
-            "url": "https://zip.cm.edu.kg/all.txt",
-            "enabled": true
-        },
-        {
-            "url": "https://countrymerge.pages.dev/all.txt",
+            "url": "https://cdn.jsdelivr.net/gh/Oliver1025/data@main/ips-labeled.txt",
             "enabled": true
         }
     ],
@@ -86,12 +82,14 @@
     "_comment_FETCH_MAX_RETRIES": "获取节点列表失败时的最大重试次数",
     "FETCH_RETRY_DELAY": 3,
     "_comment_FETCH_RETRY_DELAY": "获取节点列表重试间隔（秒）",
-    "FETCH_TIMEOUT": 3,
+    "FETCH_TIMEOUT": 10,
     "_comment_FETCH_TIMEOUT": "获取节点列表读取超时（秒）",
-    "FETCH_CONNECT_TIMEOUT": 3,
+    "FETCH_CONNECT_TIMEOUT": 5,
     "_comment_FETCH_CONNECT_TIMEOUT": "获取节点列表连接超时（秒）",
     "IP_CALIBRATION_ENABLED": false,
     "_comment_IP_CALIBRATION_ENABLED": "是否启用 IP 地区校准（true=启用，false=禁用）",
+    "TOKEN_FAILURE_THRESHOLD": 3,
+    "_comment_TOKEN_FAILURE_THRESHOLD": "Token连续失败多少次后跳过（达到该次数则切换下一个Token）",
     "IP_CALIBRATION_MIN_INTERVAL": 0.1,
     "_comment_IP_CALIBRATION_MIN_INTERVAL": "地区校准的最小请求间隔（秒）",
     "IP_CALIBRATION_TOKEN_FILE": "valid_tokens.txt",
@@ -106,7 +104,7 @@
     "_comment_LOG_FILE": "运行日志文件名（仅在 ENABLE_LOGGING 为 true 时生效）",
     "FORCE_DIRECT": false,
     "_comment_FORCE_DIRECT": "是否强制所有网络请求直连（true=清除系统代理，全部直连）",
-    "TEST_AVAILABILITY": true,
+    "TEST_AVAILABILITY": false,
     "_comment_TEST_AVAILABILITY": "是否对候选节点进行可用性二次筛选（API检测）",
     "AVAILABILITY_CHECK_API": "https://api.090227.xyz/check",
     "_comment_AVAILABILITY_CHECK_API": "IP 可用性检测 API 地址",
