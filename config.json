@@ -102,7 +102,7 @@
     "_comment_ENABLE_LOGGING": "是否启用运行日志（保存为 LOG_FILE 指定的文件，每次运行覆盖）",
     "LOG_FILE": "cfnb.log",
     "_comment_LOG_FILE": "运行日志文件名（仅在 ENABLE_LOGGING 为 true 时生效）",
-    "FORCE_DIRECT": false,
+    "FORCE_DIRECT": true,
     "_comment_FORCE_DIRECT": "是否强制所有网络请求直连（true=清除系统代理，全部直连）",
     "TEST_AVAILABILITY": false,
     "_comment_TEST_AVAILABILITY": "是否对候选节点进行可用性二次筛选（API检测）",
